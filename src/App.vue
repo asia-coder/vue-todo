@@ -1,19 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <TodoList></TodoList>
+    <AddTodo />
+    <Todos />
   </div>
 </template>
 
 <script>
-import TodoList from './components/TodoList.vue'
+  import { Todos, AddTodo } from './components'
 
-export default {
-  name: 'app',
-  components: {
-    TodoList
+  export default {
+    name: 'app',
+    components: {
+      Todos,
+      AddTodo
+    }
   }
-}
 </script>
 
 <style>
@@ -24,5 +25,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  padding: 0 20px;
 }
 </style>
